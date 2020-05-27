@@ -18,7 +18,7 @@ $(function () {
       success: function (result) {
         console.log(result);
         if (result.code == 200) {
-          //设置模态框提示后消失
+          //设置模态框弹出提示
           $(".modal-body>p").text(result.msg);
           $("#myModal").modal({
             /* keyboard: true,show:true */
@@ -32,7 +32,7 @@ $(function () {
             });
           });
         } else {
-          //设置模态框提示后消失
+          //设置模态框弹出提示
           $(".modal-body>p").text(result.msg);
           $("#myModal").modal({
             /* keyboard: true,show:true */
